@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+//Colors
+
+$Main: #1a253d;
+$Blue: #3590eb;
+$Gray: #707070;
+//Fonts
+
+$Roboto: 'Roboto', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $Roboto;
+  font-size: 18px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  color: $Main;
+}
+
+.click {
+  transition: 0.5s;
+}
+
+.click:hover {
+  transform: scale(1.1);
+}
+
+.left {
+  width: 33%;
+
+  .content {
+    padding-top: 150px;
+    margin: 0 100px;
+    text-align: center;
+    #logo {
+      margin-bottom: 75px;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+    .login-text {
+      font-weight: 400;
+      margin-bottom: 45px;
+      span {
+        font-weight: 700;
+        color: $Blue;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      span:hover {
+        font-size: 20px;
+      }
+    }
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      input {
+        padding: 16px 25px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        border: 1px solid #c6c6c6;
+        border-radius: 6px;
+        outline: none;
+      }
+      img {
+        position: absolute;
+        bottom: 25%;
+        right: 5%;
+        cursor: pointer;
+      }
+    }
+    .lower-text {
+      color: $Gray;
+      text-align: left;
+      margin-bottom: 25px;
+      span {
+        font-weight: 700;
+        color: $Blue;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      span:hover {
+        font-size: 19px;
+      }
+    }
+    .socials {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      .social {
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        padding: 12px 45px;
+        border-radius: 6px;
+        border: 1px solid #c6c6c6;
+        cursor: pointer;
+      }
+
+      #fb {
+        background-color: #3b5998;
+      }
+      #twt {
+        background-color: #00acee;
+      }
+    }
+  }
+}
+
+.right {
+  width: 67%;
+  background: url(/images/bg.png);
+  background-size: cover;
+}

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1a253d;
+}
+
+.click {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.click:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.left {
+  width: 33%;
+}
+
+.left .content {
+  padding-top: 150px;
+  margin: 0 100px;
+  text-align: center;
+}
+
+.left .content #logo {
+  margin-bottom: 75px;
+}
+
+.left .content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.left .content .login-text {
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+.left .content .login-text span {
+  font-weight: 700;
+  color: #3590eb;
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.left .content .login-text span:hover {
+  font-size: 20px;
+}
+
+.left .content .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.left .content .inputs input {
+  padding: 16px 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #c6c6c6;
+  border-radius: 6px;
+  outline: none;
+}
+
+.left .content .inputs img {
+  position: absolute;
+  bottom: 25%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.left .content .lower-text {
+  color: #707070;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.left .content .lower-text span {
+  font-weight: 700;
+  color: #3590eb;
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.left .content .lower-text span:hover {
+  font-size: 19px;
+}
+
+.left .content .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.left .content .socials .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 45px;
+  border-radius: 6px;
+  border: 1px solid #c6c6c6;
+  cursor: pointer;
+}
+
+.left .content .socials #fb {
+  background-color: #3b5998;
+}
+
+.left .content .socials #twt {
+  background-color: #00acee;
+}
+
+.right {
+  width: 67%;
+  background: url(/images/bg.png);
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */

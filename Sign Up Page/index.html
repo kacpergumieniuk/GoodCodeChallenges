@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="left">
+        <div class="content">
+            <img src="/images/logo.png" alt="" id="logo">
+            <h1>Create an account on Forward</h1> 
+
+            <p class="login-text">Already have an account? <span>Login</span></p>
+
+            <div class="inputs">
+
+            <input type="email" class="email" placeholder="Enter e-mail adress">
+
+            <input type="password" class="password" placeholder="Create password">
+
+            <img src="/images/showpassword-icon.png" alt="" id="eye" onclick= viewChange()>
+            
+        </div>
+            <p class="lower-text">Or create account with</p>
+            
+            <div class="socials">
+    
+            <div class="social click" id="ggl"><img src="/images/google-icon.png" alt=""></div>
+    
+            <div class="social click" id="fb"><img src="/images/facebook-icon.png" alt=""></div>
+    
+            <div class="social click" id="twt"><img src="/images/twitter-icon.png" alt=""></div>
+    
+        </div>
+    
+        <p class="lower-text">By signing up, you accept our <span>Terms of Use</span> and <span>Privacy Policy.</span></p>
+        </div>
+       
+    </div>
+
+
+
+
+
+    <div class="right"></div>
+
+   <script>
+
+    const eye =  document.getElementById("eye");
+    const password = document.querySelector(".password");
+
+
+     function viewChange(){
+         if(password.type === 'password'){
+             password.type = 'text'
+         }
+         else{
+             password.type = 'password'
+         }
+        console.log(password.type)
+     }
+
+    
+
+
+    
+
+
+   </script>
+</body>
+</html>
