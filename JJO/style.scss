@@ -17,8 +17,16 @@ $Black: #141414;
 }
 
 body {
-  max-width: 1920px;
   font-family: $Manrope;
+}
+
+.click {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.click:hover {
+  transform: scale(1.1);
 }
 
 .blue-button {
@@ -30,6 +38,7 @@ body {
 .hero {
   height: 540px;
   background-image: url(/images/hero-image.png);
+  background-size: cover;
   color: white;
   padding: 0 140px;
 
@@ -100,7 +109,7 @@ body {
   .components {
     display: flex;
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 
     .component {
       position: relative;
@@ -152,7 +161,7 @@ body {
     }
     .bordered:after {
       content: '';
-      width: 2px;
+      width: 1px;
       height: 100%;
       right: 7%;
       top: 0;
@@ -170,6 +179,7 @@ body {
   .companies {
     display: flex;
     position: relative;
+    margin-bottom: 60px;
   }
   .company {
     flex: 1;
@@ -201,13 +211,60 @@ body {
   margin: 0 140px;
   background: url(/images/Newsletter-image.png);
   background-color: #141414;
+  background-size: cover;
+
   height: 325px;
   color: white;
   .wrapper {
-    margin: 0 50px;
+    margin: 0 70px;
 
     h1 {
       font-size: 48px;
+      padding-top: 70px;
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 525px;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .input {
+      display: flex;
+
+      input {
+        width: 350px;
+        padding: 10px;
+        border-radius: 6px;
+        margin-right: 20px;
+        outline: none;
+      }
+      .button {
+        height: 40px;
+        background-color: $Blue;
+        width: 150px;
+        border-radius: 6px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(3, 19, 232, 0.35) 0px 5px 15px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.footer {
+  padding: 60px 0;
+  font-size: 20px;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    color: $Black;
+    li {
+      padding: 0 25px;
     }
   }
 }

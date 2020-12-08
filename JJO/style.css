@@ -7,8 +7,18 @@
 }
 
 body {
-  max-width: 1920px;
   font-family: "Manrope", sans-serif;
+}
+
+.click {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.click:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .blue-button {
@@ -21,6 +31,7 @@ body {
 .hero {
   height: 540px;
   background-image: url(/images/hero-image.png);
+  background-size: cover;
   color: white;
   padding: 0 140px;
 }
@@ -112,7 +123,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .jobs-offers .components .component {
@@ -179,7 +190,7 @@ body {
 
 .jobs-offers .components .bordered:after {
   content: '';
-  width: 2px;
+  width: 1px;
   height: 100%;
   right: 7%;
   top: 0;
@@ -200,6 +211,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-bottom: 60px;
 }
 
 .featured-companies .company {
@@ -238,15 +250,79 @@ body {
   margin: 0 140px;
   background: url(/images/Newsletter-image.png);
   background-color: #141414;
+  background-size: cover;
   height: 325px;
   color: white;
 }
 
 .newsletter .wrapper {
-  margin: 0 50px;
+  margin: 0 70px;
 }
 
 .newsletter .wrapper h1 {
   font-size: 48px;
+  padding-top: 70px;
+  margin-bottom: 10px;
+}
+
+.newsletter .wrapper p {
+  max-width: 525px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.newsletter .wrapper .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newsletter .wrapper .input input {
+  width: 350px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 20px;
+  outline: none;
+}
+
+.newsletter .wrapper .input .button {
+  height: 40px;
+  background-color: #266efd;
+  width: 150px;
+  border-radius: 6px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(3, 19, 232, 0.35) 0px 5px 15px;
+          box-shadow: rgba(3, 19, 232, 0.35) 0px 5px 15px;
+  font-weight: 700;
+}
+
+.footer {
+  padding: 60px 0;
+  font-size: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 300;
+  color: #141414;
+}
+
+.footer ul li {
+  padding: 0 25px;
 }
 /*# sourceMappingURL=style.css.map */
