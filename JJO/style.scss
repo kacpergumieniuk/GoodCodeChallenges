@@ -110,6 +110,7 @@ body {
     display: flex;
     width: 100%;
     margin-bottom: 100px;
+    flex-wrap: wrap;
 
     .component {
       position: relative;
@@ -180,6 +181,7 @@ body {
     display: flex;
     position: relative;
     margin-bottom: 60px;
+    flex-wrap: wrap;
   }
   .company {
     flex: 1;
@@ -268,3 +270,13 @@ body {
     }
   }
 }
+
+/*
+
+@media (max-width: 1200px) {
+  .bordered:after {
+    display: none;
+  }
+}
+
+*/

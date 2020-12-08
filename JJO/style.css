@@ -124,6 +124,8 @@ body {
   display: flex;
   width: 100%;
   margin-bottom: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .jobs-offers .components .component {
@@ -212,6 +214,8 @@ body {
   display: flex;
   position: relative;
   margin-bottom: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .featured-companies .company {
@@ -325,4 +329,14 @@ body {
 .footer ul li {
   padding: 0 25px;
 }
+
+/*
+
+@media (max-width: 1200px) {
+  .bordered:after {
+    display: none;
+  }
+}
+
+*/
 /*# sourceMappingURL=style.css.map */
