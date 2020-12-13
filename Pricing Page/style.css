@@ -295,6 +295,9 @@ body {
     font-weight: 700;
     font-size: 20px;
   }
+  .wrapper .top .navbar .hamburger {
+    display: inline-block;
+  }
   .wrapper .top .navbar .hamburger div {
     display: block;
     cursor: pointer;
