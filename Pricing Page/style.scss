@@ -197,9 +197,12 @@ body {
   }
 }
 @media (max-width: 1200px) {
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     position: relative;
-    overflow-x: hidden;
   }
 
   .wrapper {
