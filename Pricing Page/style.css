@@ -251,6 +251,7 @@ body {
 @media (max-width: 1200px) {
   body {
     position: relative;
+    overflow-x: hidden;
   }
   .wrapper .top {
     height: 700px;
@@ -332,7 +333,7 @@ body {
   }
   .wrapper .bot .sections .section {
     margin-bottom: 30px;
-    max-width: 240px;
+    width: 100%;
   }
   .wrapper .bot .sections #section2 {
     margin: 0px;
